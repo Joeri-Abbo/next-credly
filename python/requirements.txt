@@ -90,6 +90,6 @@ trycourier==4.4.0
 urllib3==1.26.15
 webdriver-manager==3.8.2
 websocket-client==0.59.0
-Werkzeug==2.2.2
+Werkzeug==2.2.3
 wrapt==1.14.1
 wsproto==1.2.0
