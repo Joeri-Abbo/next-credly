@@ -1,6 +1,6 @@
 about-time==3.1.1
 alive-progress==2.4.1
-ansible==6.4.0
+ansible==7.0.0
 ansible-core==2.13.4
 applescript==2021.2.9
 appscript==1.2.2
