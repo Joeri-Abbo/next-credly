@@ -2,6 +2,7 @@ import {useState, useEffect} from "react";
 import Badge from "./BadgeInterface";
 
 export default function BadgeList() {
+    const baseUrl = "https://raw.githubusercontent.com/Joeri-Abbo/python-credly-scraper/master/data/badges/";
     const [badges, setBadges] = useState<Badge[]>([]);
     const [searchTerm, setSearchTerm] = useState<string>("");
     const [filter, setFilter] = useState({
@@ -20,17 +21,14 @@ export default function BadgeList() {
                 "https://raw.githubusercontent.com/Joeri-Abbo/python-credly-scraper/2965afc5ff6a0575821a90d72e4e82288fb8ce24/data/badges.json"
             );
             const data = await response.json();
-            console.log(data); // check the data
 
             // Convert the object of objects into an array
             const badgeArray: Badge[] = Object.values(data);
-            console.log(badgeArray); // check the badge array
             setBadges(badgeArray);
         }
 
-
         fetchBadges();
-    }, []);
+    }, [baseUrl]);
 
     useEffect(() => {
         // Get unique type_category values
@@ -135,7 +133,7 @@ export default function BadgeList() {
                         <p>{badge.description}</p>
                         <p>Level: {badge.level}</p>
                         <p>Type Category: {badge.type_category}</p>
-                        <p>Issuer: {badge.issuer.entities[0].entity.name}</p>
+                        {/*<p>Issuer: {badge.issuer.entities[0].entity.name}</p>*/}
                     </li>
                 ))}
             </ul>

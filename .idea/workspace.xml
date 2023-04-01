@@ -5,7 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="18ba489a-f243-4a67-86fd-b31b2355550c" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/components/BadgeInterface.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/components/BadgeList.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/BadgeList.tsx" afterDir="false" />
     </list>
@@ -53,7 +53,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1680344204016</updated>
-      <workItem from="1680344204992" duration="6591000" />
+      <workItem from="1680344204992" duration="11372000" />
     </task>
     <servers />
   </component>
