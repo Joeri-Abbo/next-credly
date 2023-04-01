@@ -1,5 +1,6 @@
 import {useState, useEffect} from "react";
 import Badge from "./BadgeInterface";
+import LazyImage from "./LazyImage";
 
 export default function BadgeList() {
     const baseUrl = "https://raw.githubusercontent.com/Joeri-Abbo/python-credly-scraper/master/data/badges/";
@@ -125,7 +126,7 @@ export default function BadgeList() {
                         className="flex-0 w-1/5 p-2 border border-gray-300 rounded shadow-sm"
                     >
                         <h3 className="font-bold">{badge.name}</h3>
-                        <img
+                        <LazyImage
                             src={badge.image.url}
                             alt={badge.name}
                             className="w-full h-auto mb-2"
