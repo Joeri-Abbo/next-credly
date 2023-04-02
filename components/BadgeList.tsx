@@ -19,12 +19,13 @@ export default function BadgeList() {
     useEffect(() => {
         async function fetchBadges() {
             const response = await fetch(
-                "https://raw.githubusercontent.com/Joeri-Abbo/python-credly-scraper/2965afc5ff6a0575821a90d72e4e82288fb8ce24/data/badges.json"
+                "badges.json"
             );
             const data = await response.json();
 
             // Convert the object of objects into an array
-            const badgeArray: Badge[] = Object.values(data);
+            const badgeArray: Badge[] = data;
+            // const badgeArray: Badge[] = Object.values(data);
             setBadges(badgeArray);
         }
 
@@ -121,20 +122,24 @@ export default function BadgeList() {
             </select>
             <ul className="flex flex-wrap p-0 list-none">
                 {filteredBadges.map((badge) => (
+
                     <li
                         key={badge.id}
                         className="flex-0 w-1/5 p-2 border border-gray-300 rounded shadow-sm"
                     >
+
                         <h3 className="font-bold">{badge.name}</h3>
-                        <LazyImage
-                            src={badge.image.url}
-                            alt={badge.name}
-                            className="w-full h-auto mb-2"
-                        />
+                        {badge.image && badge.image.url && (
+                            <LazyImage
+                                src={badge.image.url}
+                                alt={badge.name}
+                                className="w-full h-auto mb-2"
+                            />
+                        )}
+
                         <p>{badge.description}</p>
                         <p>Level: {badge.level}</p>
                         <p>Type Category: {badge.type_category}</p>
-                        {/*<p>Issuer: {badge.issuer.entities[0].entity.name}</p>*/}
                     </li>
                 ))}
             </ul>
