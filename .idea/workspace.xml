@@ -6,9 +6,6 @@
   <component name="ChangeListManager">
     <list default="true" id="18ba489a-f243-4a67-86fd-b31b2355550c" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/BadgeInterface.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/BadgeInterface.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/BadgeList.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/BadgeList.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/badges.json" beforeDir="false" afterPath="$PROJECT_DIR$/public/badges.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -30,7 +27,7 @@
   &quot;keyToString&quot;: {
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;feature/use-new-badges&quot;,
     &quot;last_opened_file_path&quot;: &quot;/Users/joeriabbo/Sites/next/next-credly/components&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
@@ -56,6 +53,7 @@
       <updated>1680344204016</updated>
       <workItem from="1680344204992" duration="11372000" />
       <workItem from="1680462134414" duration="726000" />
+      <workItem from="1681143145787" duration="634000" />
     </task>
     <servers />
   </component>
