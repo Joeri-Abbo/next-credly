@@ -13,7 +13,7 @@ export default function BadgeList() {
     });
 
     const [typeCategories, setTypeCategories] = useState<string[]>([]);
-    const [costs, setCosts] = useState<Array<number | null>>([]);
+    const [costs, setCosts] = useState<number[]>([]);
     const [levels, setLevels] = useState<string[]>([]);
 
     useEffect(() => {
@@ -41,7 +41,7 @@ export default function BadgeList() {
         // Get unique cost values and filter out null values
         const uniqueCosts = [
             ...new Set(
-                badges.map((badge) => badge.cost).filter((cost) => cost !== null)
+                badges.map((badge) => badge.cost).filter((cost): cost is number => cost !== null)
             ),
         ];
         setCosts(uniqueCosts);
